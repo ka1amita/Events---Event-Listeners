@@ -6,10 +6,9 @@ $('.second').click(() => {
 $('.first').text('Yeah, you clicked me')
 })
 
-// $('.third').click(() => {
-//     $('button').css('background-color', 'purple')
-// })
-
-$('.third').on('click', () => {
-    $('button').css('background-color', 'purple')
+$('.third').click(() => {
+    console.log('click')
+    let color = $('input').val()
+    console.log(color)
+    $('button').css('background-color',color)
 })
