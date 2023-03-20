@@ -6,10 +6,18 @@ $('.second').click(() => {
 $('.first').text('Yeah, you clicked me')
 })
 
-// $('.third').click(() => {
-//     $('button').css('background-color', 'purple')
-// })
+let numberOfClicks = 0
+$('.third').click(() => {
+    console.log('click')
+    numberOfClicks ++
+    console.log(numberOfClicks)
 
-$('.third').on('click', () => {
-    $('button').css('background-color', 'purple')
+    let color = $('input').val()
+    console.log(color)
+    if (numberOfClicks === 1) {
+    
+        $('button').css('background-color',color)
+    
+}
+
 })
